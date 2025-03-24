@@ -203,7 +203,7 @@ def update_charts(hospital, outcome, diagnosis, year):
 
     # Summary stats
     total_admissions = len(filtered)
-    num_deaths = (filtered["Outcome"] == "Died").sum()
+    num_deaths = (filtered["Outcome"] == "Succumbed/Died").sum()
     avg_los = filtered["Length_of_Stay_days"].mean().round(1)
     avg_bw = filtered["Birth_Weight_g"].mean().round(1)
 
@@ -243,6 +243,11 @@ def update_charts(hospital, outcome, diagnosis, year):
             facet_col="Hospital",
             title=f"Outcomes by Diagnosis{suffix_text}",
         )
+        fig1.update_yaxes(
+            title_text="Number of Cases",
+            title_standoff=20,
+        )
+
     else:
         fig1 = px.histogram(
             filtered,
@@ -250,6 +255,11 @@ def update_charts(hospital, outcome, diagnosis, year):
             color="Outcome",
             barmode="group",
             title=f"Outcomes by Diagnosis{suffix_text}",
+            labels={"count": "Number of Cases"},
+        )
+        fig1.update_yaxes(
+            title_text="Number of Cases",
+            title_standoff=20,
         )
 
     if hospital:
@@ -265,7 +275,7 @@ def update_charts(hospital, outcome, diagnosis, year):
             color="Hospital",
             barmode="group",
             title=f"Average Length of Stay by Outcome{suffix_text}",
-            labels={"Length_of_Stay_days": "Avg Days"},
+            labels={"Length_of_Stay_days": "Avg Days Addmitted"},
         )
     else:
         los_avg = (
@@ -276,7 +286,7 @@ def update_charts(hospital, outcome, diagnosis, year):
             x="Outcome",
             y="Length_of_Stay_days",
             title=f"Average Length of Stay by Outcome{suffix_text}",
-            labels={"Length_of_Stay_days": "Avg Days"},
+            labels={"Length_of_Stay_days": "Avg Days Addmitted"},
         )
 
     admit_trend = (
@@ -289,6 +299,7 @@ def update_charts(hospital, outcome, diagnosis, year):
         color="Hospital",
         markers=True,
         title=f"Monthly Admissions by Hospital{suffix_text}",
+        labels={"Count": "Number of Admissions"},
     )
     fig3.update_xaxes(dtick="M1", tickformat="%b %Y", tickangle=-45)
 
@@ -300,6 +311,7 @@ def update_charts(hospital, outcome, diagnosis, year):
             color="Outcome",
             box=True,
             title=f"Birth Weight Distribution by Outcome{suffix_text}",
+            labels={"Birth_Weight_g": "Birth Weight in grams"},
         )
     else:
         fig4 = px.violin(
@@ -308,6 +320,7 @@ def update_charts(hospital, outcome, diagnosis, year):
             color="Outcome",
             box=True,
             title=f"Birth Weight Distribution by Outcome{suffix_text}",
+            labels={"Birth_Weight_g": "Birth Weight in grams"},
         )
 
     fig5 = px.pie(
