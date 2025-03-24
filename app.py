@@ -1,3 +1,4 @@
+import os
 import dash
 import pandas as pd
 import plotly.express as px
@@ -316,4 +317,5 @@ def update_charts(hospital, outcome, diagnosis, year):
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 8050))
+    app.run(host="0.0.0.0", port=port, debug=True)
