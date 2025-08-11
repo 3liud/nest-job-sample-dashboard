@@ -503,7 +503,6 @@ def download_csv(n, country, city, dx, outcome, year, map_city):
     dff = get_filtered_df(key, country, city, dx, outcome, year, map_city)
     return dcc.send_data_frame(dff.to_csv, "filtered_data.csv", index=False)
 
-
 # -----------------------------
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8050))
