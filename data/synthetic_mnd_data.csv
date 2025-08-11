@@ -3908,21 +3908,6 @@ PID772286,Uganda,Kampala,hot-wet,Urban,Secondary,Kampala Secondary G,2021-03-23,
 PID772287,Egypt,Alexandria,cool-wet,Urban,Primary,Alexandria Primary A,2024-07-06,2024-07-07,1,Jaundice,None,Recovered,Male,31.0,3917.0,402.0,0.61
 PID772288,Ethiopia,Addis Ababa,temperate,Urban,Primary,Addis Ababa Primary G,2023-03-11,2023-03-15,4,Preterm/LBW,IV,Recovered,Female,30.0,4165.0,255.0,1.81
 PID772289,South Africa,Johannesburg,temperate,Urban,Primary,Johannesburg Primary C,2022-12-22,2022-12-24,2,RDS,Surfactant,Referred,Male,39.0,4646.0,703.0,0.49
-PID772290,Egypt,Giza,hot-dry,Mixed,Secondary,Giza Secondary B,2021-02-02,2021-02-05,3,Jaundice,Phototherapy,Referred,Male,37.0,4404.0,176.0,1.34
-PID772291,Ghana,Tamale,hot-dry,Mixed,Primary,Tamale Primary D,2022-08-07,2022-08-09,2,Sepsis,None,Referred,Female,34.0,4077.0,206.0,0.2
-PID772292,South Africa,Durban,hot-wet,Mixed,Tertiary,Durban Tertiary E,2024-07-03,2024-07-06,3,Sepsis,None,Referred,Male,37.0,4583.0,620.0,4.02
-PID772293,South Africa,Johannesburg,temperate,Urban,Tertiary,Johannesburg Tertiary D,2023-09-13,2023-09-16,3,Asphyxia/HIE,IV,Referred,Female,41.0,5024.0,797.0,1.96
-PID772294,Kenya,Nairobi,temperate-dry,Urban,Secondary,Nairobi Secondary E,2024-05-23,2024-06-01,9,Preterm/LBW,CPAP,Recovered,Female,34.0,3882.0,532.0,1.01
-PID772295,Ghana,Accra,hot-wet,Urban,Primary,Accra Primary B,2023-11-27,2023-11-29,2,Sepsis,None,Recovered,Male,40.0,5231.0,145.0,0.87
-PID772296,Morocco,Casablanca,temperate,Urban,Primary,Casablanca Primary A,2022-08-09,2022-08-13,4,Sepsis,Antibiotics,Recovered,Female,35.0,3826.0,1218.0,1.32
-PID772297,Nigeria,Lagos,hot-wet,Urban,Primary,Lagos Primary F,2021-04-13,2021-04-16,3,Asphyxia/HIE,IV,Recovered,Male,36.0,4322.0,631.0,0.31
-PID772298,Uganda,Gulu,hot-wet,Mixed,Secondary,Gulu Secondary A,2021-02-06,2021-02-07,1,Asphyxia/HIE,Oxygen,Referred,Male,36.0,4275.0,98.0,2.98
-PID772299,South Africa,Cape Town,cool-wet,Urban,Primary,Cape Town Primary A,2020-04-24,2020-04-27,3,Sepsis,None,Recovered,Male,36.0,4818.0,578.0,0.27
-PID772300,Ethiopia,Addis Ababa,temperate,Urban,Secondary,Addis Ababa Secondary H,2021-07-14,2021-07-17,3,Asphyxia/HIE,None,Referred,Female,37.0,4886.0,176.0,1.04
-PID772301,Uganda,Kampala,hot-wet,Urban,Secondary,Kampala Secondary H,2020-11-13,2020-11-30,17,NEC,Oxygen,Recovered,Male,40.0,4413.0,233.0,1.91
-PID772302,Morocco,Rabat,cool-wet,Urban,Tertiary,Rabat Tertiary H,2020-07-24,2020-07-26,2,Congenital,IV,Referred,Female,34.0,4387.0,1536.0,2.06
-PID772303,Nigeria,Lagos,hot-wet,Urban,Secondary,Lagos Secondary F,2020-02-18,2020-02-20,2,Sepsis,Antibiotics,Recovered,Female,32.0,3895.0,608.0,2.71
-PID772304,Senegal,Touba,hot-dry,Mixed,Tertiary,Touba Tertiary D,2021-10-15,2021-10-22,7,Preterm/LBW,CPAP,Recovered,Male,31.0,3965.0,316.0,2.36
 PID772305,South Africa,Johannesburg,temperate,Urban,Secondary,Johannesburg Secondary G,2022-10-24,2022-10-28,4,Asphyxia/HIE,None,Recovered,Male,38.0,3809.0,2567.0,4.93
 PID772306,Morocco,Rabat,cool-wet,Urban,Primary,Rabat Primary A,2022-11-13,2022-11-16,3,Jaundice,Phototherapy,Recovered,Female,34.0,4052.0,591.0,0.78
 PID772307,Kenya,Kisumu,hot-wet,Mixed,Secondary,Kisumu Secondary E,2022-11-25,2022-11-28,3,Jaundice,None,Recovered,Male,38.0,5341.0,298.0,4.13
