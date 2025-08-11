@@ -1,4 +1,4 @@
-# NEST360 Sample Neonatal Dashboard
+# African Neonatal Outcomes Dashboard
 
 This dashboard simulates a neonatal monitoring system aligned with the Minimal Neonatal Dataset (mND) structure. It showcases how key metrics and filters can support monitoring and evaluation (M&E) for neonatal care across hospitals and time.
 
