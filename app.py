@@ -79,6 +79,7 @@ df["lon"] = df["City"].map(lambda c: CITY_LATLON.get(c, (None, None))[1])
 # App (dark theme) + cache
 # -----------------------------
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.CYBORG])
+app.title = "African Neonatal Outcomes Dashboard"
 server = app.server
 cache = Cache(
     server, config={"CACHE_TYPE": "SimpleCache", "CACHE_DEFAULT_TIMEOUT": 300}
@@ -502,6 +503,7 @@ def download_csv(n, country, city, dx, outcome, year, map_city):
     key = _hash_filters(country, city, dx, outcome, year, map_city)
     dff = get_filtered_df(key, country, city, dx, outcome, year, map_city)
     return dcc.send_data_frame(dff.to_csv, "filtered_data.csv", index=False)
+
 
 # -----------------------------
 if __name__ == "__main__":
